@@ -1,11 +1,11 @@
 GloCalc.factory("Dosege", function() {
 
-    // Insulin Constructor
-    function Dosege(carbohydrate, insulin) {
-        this.carbohydrate = carbohydrate;
-        this.insulin = insulin;
+    // ins Constructor
+    function Dosege(cc, ins) {
+        this.cc = cc;
+        this.ins = ins;
         this.calc = function() {
-            var doseResult = this.carbohydrate + this.insulin;
+            var doseResult = this.cc + this.ins;
             return doseResult;
         }
       
