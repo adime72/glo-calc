@@ -11,11 +11,14 @@ GloCalc.config(function ($routeProvider) {
             //controller: "RecipeGalleryCtrl"
         })
         .when("/main", {
-            templateUrl: "App/main/main.html" ,
+            templateUrl: "app/main/main.html",
             controller: "MainCtrl"
+            /*
+            templateUrl: "app/main/main.html",
+            controller: "MainCtrl"*/
         })
         .when("/users", {
-            templateUrl: "App/users/users.html"
+            templateUrl: "app/users/users.html"
             //controller: "RecipeDetailsCtrl"
         })});
 

@@ -1,6 +1,6 @@
 GloCalc.controller("MainCtrl", function ($scope, Dosege,$log) {
     $scope.test = "ewewew";
 
-    var dosegeUser = new Dosege(10,20);
-$log.log(dosegeUser);
+    $scope.dosegeUser = new Dosege(10,20);
+$log.log($scope.dosegeUser);
 });
