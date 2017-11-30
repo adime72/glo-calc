@@ -1,6 +1,6 @@
 var GloCalc = angular.module("GloCalc", ["ngRoute"]);
 
-Insulin.config(function ($routeProvider) {
+GloCalc.config(function ($routeProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "App/home/home.html"

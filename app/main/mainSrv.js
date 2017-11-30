@@ -16,7 +16,7 @@ GloCalc.factory("Dosege", function() {
     return Dosege;
   });
 
-var dosegeUser = new Dosege(10,20);
+//var dosegeUser = new Dosege(10,20);
 
 
 //   function setInsulin(carsPlain) {
