@@ -13,13 +13,16 @@ GloCalc.config(function ($routeProvider) {
         .when("/main", {
             templateUrl: "app/main/main.html",
             controller: "MainCtrl"
-            /*
-            templateUrl: "app/main/main.html",
-            controller: "MainCtrl"*/
-        })
+                })
         .when("/users", {
             templateUrl: "app/users/users.html"
             //controller: "RecipeDetailsCtrl"
-        })});
+        })
+        .when("/login", {
+            templateUrl: "app/login/login.html",
+            //controller: "loginCtrl"
+        })
+    });
+        
 
 

@@ -1,20 +1,22 @@
 GloCalc.factory("Dosege", function() {
-    
+
     // Insulin Constructor
     function Dosege(carbohydrate, insulin) {
         this.carbohydrate = carbohydrate;
         this.insulin = insulin;
-
-     /*   //this.mile = convert.distance(this.km, "KM", "MILE");
-        this.selected = false;
-        this.kmPerYear = function() {
+        this.calc = function() {
+            var doseResult = this.carbohydrate + this.insulin;
+            return doseResult;
+        }
+        /*        this.kmPerYear = function() {
             var currentYear = new Date().getFullYear();
             return Math.round(this.km / (currentYear - this.year + 1));
-        };*/
+        };
+        */
     }
-    
+
     return Dosege;
-  });
+});
 
 //var dosegeUser = new Dosege(10,20);
 

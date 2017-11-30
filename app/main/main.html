@@ -17,11 +17,14 @@
 
  <br>
  
-    <button type="button" class="btn btn-default">calculate</button>
+    <button type="button" class="btn btn-default" ng-click="calc()">calculate</button>
   </form>
 </div>
 
-<p>{{dosegeUser.carbohydrate}} {{dosegeUser.insuline}}</p>
+<p>{{dosegeUser.carbohydrate}} {{dosegeUser.insulin}}</p>
+ <br>
+<p>{{ dosegeUser.calc()}} </P>
+
 
 <!-- <p>{{dosegeUser.carbohydrate dosegeUser.insuline}}</p> -->
 
