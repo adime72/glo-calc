@@ -7,23 +7,26 @@
   <form action="/action_page.php">
     <div class="form-group">
       <label for="insulin">Insulin in the blod:</label>
-      <input type="number" class="form-control" id="insulin">
+      <input type="number" class="form-control" ng-model="insulin" id="insulin">
     </div>
     <div class="form-group">
       <label for="carbohydrate">how much pchmemea in the meal:</label>
-      <input type="number" class="form-control" id="carbohydrate" placeholder="Enter the amount of carbohydrate in the blod" name="carbohydrate">
+      <input type="number" class="form-control" ng-model="carbohydrate" id="carbohydrate" placeholder="Enter the amount of carbohydrate in the blod" name="carbohydrate">
     </div>
  
 
  <br>
  
-    <button type="button" class="btn btn-default" ng-click="calc()">calculate</button>
+    <button type="button" class="btn btn-default" ng-click="showDosege()">calculate</button>
   </form>
 </div>
 
+<h2>{{"You should Inject: " + InsulinUnits}}</h2>
+<!--
 <p>{{dosegeUser.carbohydrate}} {{dosegeUser.insulin}}</p>
  <br>
 <p>{{ dosegeUser.calc()}} </P>
+-->
 
 
 <!-- <p>{{dosegeUser.carbohydrate dosegeUser.insuline}}</p> -->
