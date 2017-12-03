@@ -1,35 +1,13 @@
 [
     {
-        "email":"nir@nir.com",
-        "password": "nir123",
-        "firstName":"Nir",
-        "lastName": "Channes",
-      
+        "Name":"Bob Sfog",
+        "address":"tel aviv",
+        "email":"bob@gmail.com",
+        "pwd": "bob123",
+        "radioSex":1,
+        "diabetesType":0,
+        "ratioCarbon":120,
+        "ratioCorrect":222
+        //"data":"app/data/nir-recipes.json"
     }
-  
-   
 ]
-
-// [
-//     {
-//         "email":"nir@nir.com",
-//         "password": "nir123",
-//         "firstName":"Nir",
-//         "lastName": "Channes",
-//         "data":"app/data/nir-recipes.json"
-//     }
-//     {
-//         "email":"marinarimon@gfmail.com.com",
-//         "password": "123456",
-//         "firstName":"Marina",
-//         "lastName": "Rimon"
-//        // "data":"app/data/nir-recipes.json"
-//     }
-//     {
-//         "email":"adime.support@gmail.com",
-//         "password": "123456",
-//         "firstName":"Adi",
-//         "lastName": "Mirovitch"
-//         //"data":"app/data/nir-recipes.json"
-//     }
-// ]
