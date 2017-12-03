@@ -7,8 +7,8 @@ GloCalc.config(function ($routeProvider) {
             //controller: "HomeCtrl"
         })
         .when("/signUp", {
-            templateUrl: "App/signUp/signUp.html" 
-            //controller: "RecipeGalleryCtrl"
+            templateUrl: "App/signUp/signUp.html",
+            controller: "signUpCtrl"
         })
         .when("/main", {
             templateUrl: "app/main/main.html",
@@ -16,7 +16,7 @@ GloCalc.config(function ($routeProvider) {
                 })
         .when("/users", {
             templateUrl: "app/users/users.html"
-            //controller: "RecipeDetailsCtrl"
+            //controller: "users"
         })
         .when("/login", {
             templateUrl: "app/login/login.html",

@@ -17,9 +17,7 @@
     <script src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-
     <link href="css/style.css" rel="stylesheet">
-
     <script src="app/app.js"></script>
     <script src="app/main/mainCtrl.js"></script>
     <script src="app/main/mainSrv.js"></script>
@@ -38,59 +36,56 @@
         <!-- container-fluid -->
         <div class="container">
             <div class="navbar-collapse collapse">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                <a class="navbar-brand" href="#">GloCalc Ltd.</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav ">
-                    <li nav navbar-nav>
-                        <a href="#">Welcome</a>
-                    </li>
-                    <li>
-                        <a href="#!/home">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#!/main">Daily Treatment</a>
-                    </li>
-                    <li>
-                        <a href="#">Insulin Calc</a>
-                    </li>
-                    
-<!-- trying to do a dropdown manu  by Adi 02.12 -->
-                 <li ng-repeat="menu in menus" ng-class="{dropdown: menu.menus}">
-                        <a href="#"  ng-class="{'dropdown-toggle': menu.menus}" data-toggle="dropdown"> information<span class="caret"></span></a>
+                    <a class="navbar-brand" href="#">GloCalc Ltd.</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav ">
+                        <li nav navbar-nav>
+                            <a href="#">Welcome</a>
+                        </li>
+                        <li>
+                            <a href="#!/main">Daily Treatment</a>
+                        </li>
+                        <li>
+                            <a href="#">Insulin Calc</a>
+                        </li>
 
-                     <ul ng-if="menu.menus" class="dropdown-menu">
-                         <li ng-repeat="submenu in menu.menus">
-                              <a href="#">Food products and dishes</a>
-                         </li>
-                      
-                            <li ng-repeat="submenu in menu.menus">
-                                <a href="#">How Do We Calculate Insulin Dose?</a>
-                         </li>
-                     </ul> 
-                  </li>
+                        <!-- trying to do a dropdown manu  by Adi 02.12 -->
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Information <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Food products and dishes</a>
+                                </li>
+                                <li>
+                                    <a href="#">How Do We Calculate Insulin Dose?</a>
+                                </li>
+                                <li>
+                                    <a href="#!/home">About Us</a>
+                                </li>
+                            </ul>
+                        </li>
 
-                    <li>
-                        <a href="#!/signUp"> Update parameters</a>
-                    </li>
-                    
-                </ul>
+                        <li>
+                            <a href="#!/signUp"> Update parameters</a>
+                        </li>
+
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a class="btn btn-info btn-lg" data-toggle="modal" href="#!/signUp">
                              <span class="glyphicon glyphicon-log-in"></span>Signup</a>
                         </li>
                     </ul>
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     </nav>
 
     <div class="container">
