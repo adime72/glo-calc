@@ -6,4 +6,3 @@ GloCalc.factory("VarConst", function () {
     }
     return VarConst;
 });
-
