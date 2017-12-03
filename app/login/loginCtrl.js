@@ -1,6 +1,5 @@
 recipeApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
-    $scope.email = "nir@nir.com";
-    $scope.password = "nir123";
+
         // TODO: Detele this
         $scope.email = "nir@nir.com";
         $scope.password = "nir123";
@@ -21,7 +20,7 @@ recipeApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $l
             if (user != null) {
                 activeUser.login(user);
                 $uibModalInstance.close("Logged-in");
-                $location.path("/recipes")
+                $location.path("/main")
             } else {
                 $scope.failedAttempt = true;
             }
