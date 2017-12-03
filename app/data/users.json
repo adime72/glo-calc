@@ -4,20 +4,32 @@
         "password": "nir123",
         "firstName":"Nir",
         "lastName": "Channes",
-        "data":"app/data/nir-recipes.json"
+      
     }
-    {
-        "email":"marinarimon@gfmail.com.com",
-        "password": "123456",
-        "firstName":"Marina",
-        "lastName": "Rimon"
-       // "data":"app/data/nir-recipes.json"
-    }
-    {
-        "email":"adime.support@gmail.com",
-        "password": "123456",
-        "firstName":"Adi",
-        "lastName": "Mirovitch"
-        //"data":"app/data/nir-recipes.json"
-    }
+  
+   
 ]
+
+// [
+//     {
+//         "email":"nir@nir.com",
+//         "password": "nir123",
+//         "firstName":"Nir",
+//         "lastName": "Channes",
+//         "data":"app/data/nir-recipes.json"
+//     }
+//     {
+//         "email":"marinarimon@gfmail.com.com",
+//         "password": "123456",
+//         "firstName":"Marina",
+//         "lastName": "Rimon"
+//        // "data":"app/data/nir-recipes.json"
+//     }
+//     {
+//         "email":"adime.support@gmail.com",
+//         "password": "123456",
+//         "firstName":"Adi",
+//         "lastName": "Mirovitch"
+//         //"data":"app/data/nir-recipes.json"
+//     }
+// ]

@@ -5,7 +5,16 @@ GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
     //  //  $scope.insUnits = $scope.dosegeUser.calc() + "units";
     // }
 
+
+
+
     $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
 
-    return doseVarConst;
+    $scope.createUser = function() {
+        // validation
+        var user = new User($scope.email, $scope,,,,);
+        activeUser.login(user);
+    }
+
+   
 });
