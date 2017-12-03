@@ -6,7 +6,7 @@ GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
     // }
 
 
-
+/*
 
     $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
 
@@ -16,6 +16,6 @@ GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
         activeUser.login(user);
     }
 
-   
+   */
 });
 

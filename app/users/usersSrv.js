@@ -10,6 +10,7 @@ GloCalc.factory("User", function(){
         this.diabetesType = plainObject.ratioCarbon;
         this.diabetesType = plainObject.ratioCorrect;
        // this.data = plainObject.data;
+       console.log ("UsersSrv1")
     };
 
     return User;
@@ -21,10 +22,12 @@ GloCalc.factory("activeUser", function(User){
 
     var isLoggedIn = function() {
         return user ? true : false;
+        console.log ("UsersSrv4")
     };
 
     var login = function(loggedInUser) {
         user = loggedInUser;
+        console.log ("UsersSrv2")
     };
 
     var logout = function() {
@@ -32,6 +35,7 @@ GloCalc.factory("activeUser", function(User){
     };
 
     var get = function() {
+        console.log ("UsersSrv3")
         return user;
     };
 
