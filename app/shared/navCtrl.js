@@ -1,4 +1,4 @@
-recipeApp.controller("NavCtrl", function ($scope, activeUser) {
+GloCalc.controller("NavCtrl", function ($scope, activeUser) {
     
     //$scope.isLoggedIn = activeUser.isLoggedIn();
     

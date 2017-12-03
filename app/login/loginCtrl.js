@@ -1,4 +1,4 @@
-recipeApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
+GloCalc.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
 
         // TODO: Detele this
         $scope.email = "nir@nir.com";

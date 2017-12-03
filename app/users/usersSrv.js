@@ -1,5 +1,5 @@
 // Shared User Constructor
-recipeApp.factory("User", function(){
+GloCalc.factory("User", function(){
     function User(plainObject) {
         this.name = plainObject.Name;
         this.address = plainObject.address;
@@ -16,7 +16,7 @@ recipeApp.factory("User", function(){
 });
 
 // Service that manges the active user
-recipeApp.factory("activeUser", function(User){
+GloCalc.factory("activeUser", function(User){
     var user = null;
 
     var isLoggedIn = function() {

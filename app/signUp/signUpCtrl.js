@@ -12,9 +12,10 @@ GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
 
     $scope.createUser = function() {
         // validation
-        var user = new User($scope.email, $scope,,,,);
+        var user = new User( $scope.Name,$scope.address,$scope.email,$scope.pwd,$scope.radioSex,$scope.diabetesType,$scope.ratioCarbon,$scope.ratioCorrect);
         activeUser.login(user);
     }
 
    
 });
+
