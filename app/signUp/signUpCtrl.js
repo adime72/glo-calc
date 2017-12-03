@@ -1,4 +1,4 @@
-GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
+GloCalc.controller("signUpCtrl", function ($scope, $log) {
   
     // $scope.showVarConst=function(){
     //     $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
@@ -8,13 +8,13 @@ GloCalc.controller("signUpCtrl", function ($scope, VarConst, $log) {
 
 
 
-    $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
+    // $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
 
-    $scope.createUser = function() {
-        // validation
-        var user = new User( $scope.Name,$scope.address,$scope.email,$scope.pwd,$scope.radioSex,$scope.diabetesType,$scope.ratioCarbon,$scope.ratioCorrect);
-        activeUser.login(user);
-    }
+    // $scope.createUser = function() {
+    //     // validation
+    //     var user = new User( $scope.Name,$scope.address,$scope.email,$scope.pwd,$scope.radioSex,$scope.diabetesType,$scope.ratioCarbon,$scope.ratioCorrect);
+    //     activeUser.login(user);
+    // }
 
    
 });
