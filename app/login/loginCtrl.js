@@ -1,5 +1,6 @@
 recipeApp.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
-    
+    $scope.email = "nir@nir.com";
+    $scope.password = "nir123";
         // TODO: Detele this
         $scope.email = "nir@nir.com";
         $scope.password = "nir123";

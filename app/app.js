@@ -15,12 +15,12 @@ GloCalc.config(function ($routeProvider) {
             controller: "MainCtrl"
                 })
         .when("/users", {
-            templateUrl: "app/users/users.html"
-            //controller: "users"
+            templateUrl: "app/users/users.html",
+            controller: "users"
         })
         .when("/login", {
             templateUrl: "app/login/login.html",
-            //controller: "loginCtrl"
+            controller: "loginCtrl"
         })
     });
         
