@@ -9,7 +9,7 @@ GloCalc.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loc
                 $scope.users.push(new User(response.data[i]));
             }
     
-            //console.log(JSON.stringify($scope.users));
+           console.log(JSON.stringify($scope.users));
         });
     
         $scope.failedAttempt = false;
