@@ -1,4 +1,4 @@
-GloCalc.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $location, activeUser, User) {
+GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser, User) {
 
         // TODO: Detele this
 
@@ -41,8 +41,8 @@ GloCalc.controller("LoginCtrl", function ($scope, $uibModalInstance, $http, $loc
             return null;
         }
     
-        $scope.dismiss = function () {
-            $uibModalInstance.close("User dismissed");
-        }
+      // $scope.dismiss = function () {
+        //    $uibModalInstance.close("User dismissed");
+       // }
     });
     
