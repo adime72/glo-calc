@@ -1,4 +1,4 @@
-GloCalc.controller("signUpCtrl", function ($log, $scope, $uibModalInstance, $http, $location, activeUser, User) {
+GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activeUser, User) {
 // 4 12 2017 
             $scope.createUser = function () {
                 var user = new User($scope.Name,
@@ -15,7 +15,7 @@ GloCalc.controller("signUpCtrl", function ($log, $scope, $uibModalInstance, $htt
                 $scope.users.push(user);
 
                 $location.path("/main");
-                
+
                 console.log(JSON.stringify($scope.user));
                 console.log(user);
             };
