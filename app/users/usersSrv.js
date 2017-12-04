@@ -7,8 +7,8 @@ GloCalc.factory("User", function(){
         this.password = plainObject.password;
         this.radioSex = plainObject.radioSex;
         this.diabetesType = plainObject.diabetesType;
-        this.diabetesType = plainObject.ratioCarbon;
-        this.diabetesType = plainObject.ratioCorrect;
+        this.ratioCarbon = plainObject.ratioCarbon;
+        this.ratioCorrect = plainObject.ratioCorrect;
        // this.data = plainObject.data;
        console.log ("UsersSrv1")
     };
