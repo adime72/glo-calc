@@ -4,7 +4,7 @@ GloCalc.factory("User", function(){
         this.name = plainObject.Name;
         this.address = plainObject.address;
         this.email = plainObject.email;
-        this.password = plainObject.password;
+        this.password = plainObject.pwd;
         this.radioSex = plainObject.radioSex;
         this.diabetesType = plainObject.diabetesType;
         this.ratioCarbon = plainObject.ratioCarbon;
