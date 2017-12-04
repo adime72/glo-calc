@@ -13,12 +13,9 @@ GloCalc.config(function ($routeProvider) {
         .when("/main", {
             templateUrl: "app/main/main.html",
             controller: "MainCtrl"
-                })
+        })
         .when("/login", {
             templateUrl: "app/login/login.html",
             controller: "LoginCtrl"
         })
-    });
-        
-
-
+});
