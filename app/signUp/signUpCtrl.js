@@ -1,22 +1,17 @@
 GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activeUser, User) {
-// 4 12 2017 
-            $scope.createUser = function () {
-                var user = new User($scope.Name,
-                    $scope.address,
-                    $scope.email,
-                    $scope.pwd,
-                    $scope.radioSex,
-                    $scope.diabetesType,
-                    $scope.ratioCarbon,
-                    $scope.ratioCorrect);
+    // 4 12 2017 
+    //console.log(user);
 
-                activeUser.login(user);
+    $scope.createUser = function () {
+       $scope.user = new User($scope.name,$scope.address,$scope.email,$scope.pwd,$scope.radioSex,$scope.diabetesType,$scope.ratioCarbon,$scope.ratioCorrect);
+    };
 
-                $scope.users.push(user);
+    activeUser.login($scope.user);
 
-                $location.path("/main");
+ //   $scope.users.push($scope.user);
 
-                console.log(JSON.stringify($scope.user));
-                console.log(user);
-            };
-        });
+    $location.path("/main");
+
+   
+
+});

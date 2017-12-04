@@ -3,7 +3,7 @@ GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser,
         // TODO: Detele this
 
         $http.get("app/data/users.json").then(function (response) {
-            $scope.users = [];
+           $scope.users = [];
             console.log (" we are at the jason");
             for (var i = 0; i < response.data.length; i++) {
                 $scope.users.push(new User(response.data[i]));
@@ -19,7 +19,6 @@ GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser,
             if (user != null) {
                 activeUser.login(user);
                 console.log ("are we here");
- //               $uibModalInstance.close("Logged-in");
                 $location.path("/main");
             } else {
                 $scope.failedAttempt = true;
