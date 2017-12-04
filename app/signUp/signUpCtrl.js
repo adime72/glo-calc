@@ -1,21 +1,22 @@
-GloCalc.controller("signUpCtrl", function ($scope, $log) {
-  
-    // $scope.showVarConst=function(){
-    //     $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
-    //  //  $scope.insUnits = $scope.dosegeUser.calc() + "units";
-    // }
+GloCalc.controller("signUpCtrl", function ($log, $scope, $uibModalInstance, $http, $location, activeUser, User) {
+// 4 12 2017 
+            $scope.createUser = function () {
+                var user = new User($scope.Name,
+                    $scope.address,
+                    $scope.email,
+                    $scope.pwd,
+                    $scope.radioSex,
+                    $scope.diabetesType,
+                    $scope.ratioCarbon,
+                    $scope.ratioCorrect);
 
+                activeUser.login(user);
 
-/*
+                $scope.users.push(user);
 
-    // $scope.doseVarConst = new VarConst($scope.ratioCarbon, $scope.ratioCorrect);
-
-    // $scope.createUser = function() {
-    //     // validation
-    //     var user = new User( $scope.Name,$scope.address,$scope.email,$scope.pwd,$scope.radioSex,$scope.diabetesType,$scope.ratioCarbon,$scope.ratioCorrect);
-    //     activeUser.login(user);
-    // }
-
-   */
-});
-
+                $location.path("/main");
+                
+                console.log(JSON.stringify($scope.user));
+                console.log(user);
+            };
+        });
