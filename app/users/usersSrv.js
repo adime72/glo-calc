@@ -1,7 +1,7 @@
 // Shared User Constructor
 GloCalc.factory("User", function(){
     function User(plainObject) {
-        this.name = plainObject.Name;
+        this.name = plainObject.name;
         this.address = plainObject.address;
         this.email = plainObject.email;
         this.password = plainObject.pwd;
