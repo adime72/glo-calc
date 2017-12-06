@@ -7,3 +7,11 @@
     font-family: "Times New Roman", Times, serif; 
     font-size: 18px;
 } 
+
+.signup {
+    color: red;
+}
+
+.update{
+    color: blue;
+}
