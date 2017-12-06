@@ -1,6 +1,10 @@
 GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser, User) {
 
-        // TODO: Detele this
+           // If the user is not logged in going back to home screen
+    if (!activeUser.isLoggedIn()) {
+        $location.path("/");
+        return;
+    }
 
         $http.get("app/data/users.json").then(function (response) {
            $scope.users = [];
