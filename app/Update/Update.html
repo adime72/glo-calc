@@ -4,8 +4,8 @@
 
   <div class="panel panel-default">
     <div class="panel-body">
-      <h4 class="signup modal-title" ng-hide="isLoggedIn()">Signup to GloCalc</h4>
-      <h4 class="update modal-title" ng-show="isLoggedIn()">Update personal info</h4>
+    <h4 class="signup modal-title" >Update personal info</h4>
+     <!-- <h4 class="update modal-title" ng-show="isLoggedIn()">Update personal info</h4>  -->
     </div> 
     <br>
 
@@ -13,42 +13,44 @@
       <!-- <form action="/action_page.php"> -->
       <div class="form-group">
         <label for="name">name:</label>
-        <input type="text" class="form-control" id="name" ng-model="newUser.name">
+        <input type="text" class="form-control" id="name" ng-model="name">
+        {{upuser.name}}
+
       </div>
       <div class="form-group">
         <label for="address"> Address:</label>
-        <input type="text" class="form-control" id="address" ng-model="newUser.address">
+        <input type="text" class="form-control" id="address" ng-model="address">
       </div>
       <div class="form-group">
         <label for="email"> Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="newUser.email">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
       </div>
       <div class="form-group">
         <label for="pwd"> Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="newUser.pwd">
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="pwd">
       </div>
       <div class="form-group">
         <label class="radio-inline">
-      <input type="radio" name="radioSex" ng-model="newUser.radioSex">male
+      <input type="radio" name="radioSex" ng-model="radioSex">male
     </label>
         <label class="radio-inline">
-      <input type="radio" name="radioSex" ng-model="newUser.radioSex">female
+      <input type="radio" name="radioSex" ng-model="radioSex">female
     </label>
       </div>
       <div class="form-group">
         <label class="radio-diabitis">
-      <input type="radio" name="diabetesType" ng-model="newUser.diabetesType">Type 1
+      <input type="radio" name="diabetesType" ng-model="diabetesType">Type 1
       </label>
         <label class="radio-diabitis">
-  <input type="radio" name="diabetesType" ng-model="newUser.diabetesType">Type 2
+  <input type="radio" name="diabetesType" ng-model="diabetesType">Type 2
 </label>
       </div>
       <div class="form-group">
         <!-- adding ng- model & id to the 2 varables by Adi 02.12-->
         <label for="ratioCarbon">Ratio Injection for carbohydrate:</label>
-        <input type="number" class="form-control" id="ratioCarbon" ng-model="newUser.ratioCarbon">
+        <input type="number" class="form-control" id="ratioCarbon" ng-model="ratioCarbon">
       </div><label for="ratioCorrect">Ratio Injection for correcting to 100:</label>
-      <input type="number" class="form-control" id="ratioCorrect" ng-model="newUser.ratioCorrect">
+      <input type="number" class="form-control" id="ratioCorrect" ng-model="ratioCorrect">
     </div>
 
   </div>

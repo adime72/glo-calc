@@ -24,6 +24,10 @@ GloCalc.config(function ($routeProvider) {
         })
         .when("/Update", {
             templateUrl: "app/Update/Update.html",
-        
+            controller: "UpdateCtrl"
+        })
+        .when("/welcome", {
+            templateUrl: "app/welcome/welcome.html",
+            controller: "UpdateCtrl"
         })
 });

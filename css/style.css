@@ -3,15 +3,24 @@
 }
 
 .navbar{
-    font-style: bold;
-    font-family: "Times New Roman", Times, serif; 
-    font-size: 18px;
+    font-style: bold, black;
+    font-family: "Lobster", cursive,"Times New Roman", Times, serif; 
+    font-size: 22px;
+    color: rgb(20, 5, 75);
+    background-color: gainsboro;
+    
 } 
-
+.navbar-brand{
+    font-family:  "Pacifico", cursive,"Times New Roman", Times, serif; 
+    font-size: 30px;  
+}
 .signup {
     color: red;
 }
 
 .update{
     color: blue;
+}
+.modal-title{
+    width: 200px;
 }
