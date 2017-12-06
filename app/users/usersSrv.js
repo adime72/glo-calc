@@ -1,5 +1,5 @@
 // Shared User Constructor
-GloCalc.factory("User", function(){
+GloCalc.factory("user", function(){
     function User(plainObject) {
         this.name = plainObject.name;
         this.address = plainObject.address;

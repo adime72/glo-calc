@@ -1,4 +1,4 @@
-GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser, User) {
+GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser, user) {
 
            // If the user is not logged in going back to home screen
     if (!activeUser.isLoggedIn()) {
@@ -10,7 +10,7 @@ GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser,
            $scope.users = [];
             console.log (" we are at the jason");
             for (var i = 0; i < response.data.length; i++) {
-                $scope.users.push(new User(response.data[i]));
+                $scope.users.push(new user(response.data[i]));
             }
     
            console.log(JSON.stringify($scope.users));

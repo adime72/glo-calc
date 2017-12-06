@@ -6,7 +6,7 @@ GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activ
     //===============================================================
     $scope.createUser = function () {
         
-       $scope.user = new User($scope.newUser);
+       $scope.user = new user($scope.newUser);
      
        if ($scope.user !=null) {
         activeUser.login($scope.user);

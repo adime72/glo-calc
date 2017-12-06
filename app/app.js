@@ -18,4 +18,8 @@ GloCalc.config(function ($routeProvider) {
             templateUrl: "app/login/login.html",
             controller: "LoginCtrl"
         })
+        .when("/food", {
+            templateUrl: "https://goo.gl/APZt6A",
+            controller: "LoginCtrl"
+        })
 });
