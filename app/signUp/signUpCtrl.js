@@ -1,4 +1,4 @@
-GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activeUser, User) {
+GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activeUser, user) {
     // 4 12 2017 
     //console.log(user);
     //==============================================================

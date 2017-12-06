@@ -8,7 +8,7 @@ GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser,
 
         $http.get("app/data/users.json").then(function (response) {
            $scope.users = [];
-            console.log (" we are at the jason");
+            console.log (" creating the data users");
             for (var i = 0; i < response.data.length; i++) {
                 $scope.users.push(new user(response.data[i]));
             }
@@ -22,10 +22,11 @@ GloCalc.controller("LoginCtrl", function ($scope,  $http, $location, activeUser,
             var user = getLoggedInUser();
             if (user != null) {
                 activeUser.login(user);
-                console.log ("are we here");
+                console.log ("active user = true");
                 $location.path("/main");
             } else {
                 $scope.failedAttempt = true;
+                console.log (" activeUser = false ");
             }
     
     

@@ -1,6 +1,6 @@
 // Shared User Constructor
 GloCalc.factory("user", function(){
-    function User(plainObject) {
+    function user(plainObject) {
         this.name = plainObject.name;
         this.address = plainObject.address;
         this.email = plainObject.email;
@@ -12,11 +12,11 @@ GloCalc.factory("user", function(){
         this.ratioCorrect = plainObject.ratioCorrect;
       };
 
-    return User;
+    return user;
 });
 
 // Service that manges the active user
-GloCalc.factory("activeUser", function(User){
+GloCalc.factory("activeUser", function(user){
     var user = null;
 
 
