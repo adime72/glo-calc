@@ -22,4 +22,8 @@ GloCalc.config(function ($routeProvider) {
             templateUrl: "https://goo.gl/APZt6A",
         
         })
+        .when("/Update", {
+            templateUrl: "app/Update/Update.html",
+        
+        })
 });
