@@ -4,6 +4,7 @@ GloCalc.controller("NavCtrl", function ($scope, activeUser) {
     
 
     $scope.isLoggedIn = function() {
+        console.log("is loggedIn")
         return activeUser.isLoggedIn();
     };
 });

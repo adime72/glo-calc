@@ -20,6 +20,6 @@ GloCalc.config(function ($routeProvider) {
         })
         .when("/food", {
             templateUrl: "https://goo.gl/APZt6A",
-            controller: "LoginCtrl"
+        
         })
 });

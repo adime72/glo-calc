@@ -17,7 +17,6 @@ GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activ
 
     
 
- //   $scope.users.push($scope.user);
 
     
 
