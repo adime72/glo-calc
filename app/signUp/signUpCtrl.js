@@ -4,6 +4,8 @@ GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activ
     //==============================================================
     //the function do not get the parametrsfrom the active user.
     //===============================================================
+
+
     $scope.createUser = function () {
         
        $scope.user = new user($scope.newUser);
@@ -15,7 +17,11 @@ GloCalc.controller("signUpCtrl", function ($log, $scope, $http, $location, activ
      
     };
 
-    
+    $scope.isLoggedIn = function() {
+        return activeUser.isLoggedIn();
+
+    };
+
 
 
     

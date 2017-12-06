@@ -21,9 +21,15 @@ GloCalc.factory("activeUser", function(user){
 
 
     var isLoggedIn = function() {
+        console.log(isLoggedIn)
         return user ? true : false;
-    };
 
+    };
+    var isLoggedOut = function() {
+        console.log(isLoggedOut)
+        return user ? false : true;
+    };
+    
     var login = function(loggedInUser) {
         user = loggedInUser;
 
