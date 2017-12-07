@@ -7,8 +7,8 @@ GloCalc.factory("Dosege", function () {
         this.ratioCarbon = ratioCarbon; //ratioCarbon;  // מקדם הזרקה   3122017
         this.ratioCorrect = ratioCorrect; //  ratioCorrect; // מקדם תיקון 3122017
         this.calc = function () {
-            var doseResult = ((this.cc-100)/this.ratioCarbon) + (this.ins/this.ratioCorrect);
-            return doseResult;
+            var doseResult = Math.round(((this.cc-100)/this.ratioCarbon) + (this.ins/this.ratioCorrect));
+            return doseResult   ;
         }
 
     }

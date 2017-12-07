@@ -1,18 +1,21 @@
 <h1>Daily Treatment for diabites type 1</h1>
+<br>
 <h4 class="modal-title">How much do you need to inject</h4>
 <div class="modal-body">
   <form action="/action_page.php">
     <div class="form-group">
-      <label for="ins">ins in the blod:</label>
+      <br>s
+      <label for="ins">Insulin in the blod:</label>
       <input type="number" class="form-control" ng-model="ins" id="ins">
     </div>
     <div class="form-group">
-      <label for="cc">how much pchmemea in the meal:</label>
+      <label for="cc">how much carbohydrate in the meal:</label>
       <input type="number" class="form-control" ng-model="cc" id="cc">
     </div>
     <button type="button" class="btn btn-default" ng-click="showDosege()">calculate</button>
   </form>
 </div>
+<br>
 <h2>{{"You should Inject: " + insUnits}}</h2>
 
 

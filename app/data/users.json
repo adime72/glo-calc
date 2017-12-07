@@ -1,9 +1,9 @@
-[  { "Name":"Bob Sfog",
+[  { "name":"Bob Sfog",
         "address":"tel aviv",
         "email":"bob@gmail.com",
         "pwd": "bob123",
-        "radioSex":1,
-        "diabetesType":0,
+        "radioSex":"1",
+        "diabetesType":"0",
         "ratioCarbon":8,
         "ratioCorrect":30
       
