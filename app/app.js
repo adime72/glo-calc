@@ -30,4 +30,8 @@ GloCalc.config(function ($routeProvider) {
             templateUrl: "app/welcome/welcome.html",
             controller: "UpdateCtrl"
         })
+        .when("/nav", {
+            templateUrl: "index.html",
+            controller: "navCtrl"
+        })
 });

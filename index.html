@@ -31,6 +31,7 @@
     <script src="app/home/homeCtrl.js"></script>
     <script src="app/food/foodCtrl.js"></script>
     <script src="app/Update/updateCtrl.js"></script>
+    <script src="app/nav/navCtrl.js"></script>
     
     <link href="css/style.css" rel="stylesheet">
     
@@ -80,7 +81,7 @@
                         <li>
                             <a ng-show="isLoggedIn()" href="#!/Update"> Update parameters</a>
                         </li>
-
+                        <h4 class= "modal-title" ng-show="isLoggedIn()">{{getUserName()}}</h4>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li>
