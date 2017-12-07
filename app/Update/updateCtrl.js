@@ -4,10 +4,12 @@ GloCalc.controller("UpdateCtrl", function ($log, $scope, $http, $location, activ
       return activeUser.isLoggedIn();
     }
 //creating an object typed user 
+// השמה של משתמש בזכרון לתוך משתנה מקומי 
     $scope.user = activeUser.get();
 
  //updating the details of the active user with the input of the update page
 //after the submit going to main page
+// עדכון נתוני משתמש לתוך אובייקט מקומי במטרה להציג את הנתונים בשדות במסך 
     $scope.updateUser = function() {
       activeUser.login($scope.user);
       $location.path("/main");

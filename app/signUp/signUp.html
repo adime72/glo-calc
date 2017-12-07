@@ -4,10 +4,12 @@
 
   <div class="panel panel-default">
     <div class="panel-body">
-      <h4 class="signup modal-title" ng-hide="isLoggedIn()">Signup to GloCalc</h4>
-      <h4 class="update modal-title" ng-show="isLoggedIn()">Update personal info</h4>
+      <h4 class="signup modal-title" >Sign Up personal info</h4>
+      <!-- <h4 class="signup modal-title" ng-hide="isLoggedIn()">Signup to GloCalc</h4>
+      <h4 class="update modal-title" ng-show="isLoggedIn()">Update personal info</h4> -->
     </div> 
     <br>
+    
 
     <div class="modal-body">
       <!-- <form action="/action_page.php"> -->
@@ -31,8 +33,7 @@
         <label class="radio-inline">
       <input type="radio" name="radioSex" ng-model="newUser.radioSex" value="1">male
     </label>
-
-  {{newUser.radioSex}}
+  
         <label class="radio-inline">
       <input type="radio" name="radioSex" ng-model="newUser.radioSex" value="0">female
     </label>
